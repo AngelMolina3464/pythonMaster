@@ -1,17 +1,12 @@
 from helpers.cositas import booleanUse, persona, avanceCurso, booleanUseLamda
+from helpers.excel.controller import  columna_seleccionada, respuesta, folder, ruta_archivo
 
-print(
-    
-booleanUse(15)
-)
+print(columna_seleccionada)
 
-print(persona["nombre"], persona["edad"])
+if respuesta.status_code == 200:
 
-print(
-    avanceCurso(5, 32)
-)
-number = booleanUseLamda(5,5)
-
-print(
-   number
-)
+    with open(ruta_archivo, 'wb') as archivo:
+        archivo.write(respuesta.content)  
+    print('Imagen descargada exitosamente.')
+else:
+    print(f'Error al descargar la imagen. Código de estado: {respuesta.status_code}')
