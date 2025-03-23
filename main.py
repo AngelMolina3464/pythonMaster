@@ -1,12 +1,35 @@
-from helpers.cositas import booleanUse, persona, avanceCurso, booleanUseLamda
-from helpers.excel.controller import  columna_seleccionada, respuesta, folder, ruta_archivo
+from helpers.cositas import avanceCurso
+from helpers.excel.controller import  run, runDev
+from fastapi import FastAPI
+from helpers.data.programasDbs import programas, programasTop, programasIng
 
-print(columna_seleccionada)
+## run()
 
-if respuesta.status_code == 200:
+app = FastAPI()
 
-    with open(ruta_archivo, 'wb') as archivo:
-        archivo.write(respuesta.content)  
-    print('Imagen descargada exitosamente.')
-else:
-    print(f'Error al descargar la imagen. Código de estado: {respuesta.status_code}')
+app.title = "Master Python"
+app.version = "0.0.1"
+
+@app.get("/", tags=["Inicio"])
+def home (): 
+    return {"pagina" : "Inicio ", "Python": "FastApi"}       
+
+@app.get("/lenguajes", tags=["Lenguaje"])
+def get_lenguajes (): 
+    return programas      
+
+@app.get("/lenguajes/{id}", tags=["Lenguaje"])
+def get_lenguaje (id : int): 
+    selected = {"LenguajeSeleccionado": programasTop[id] }
+    return selected      
+
+@app.get("/lenguajeModulo/", tags=["Lenguaje"])
+def get_lenguajeModulo (modulo : str): 
+    selected = {"Nivel de Lenguaje": programas[modulo] }
+    return selected      
+
+@app.post("/programas", tags=["Programas"])
+def post_programas (tipo: str, nombre: str, nivel: str): 
+    addProgram = {"tipo": tipo, "nombre": nombre, "nivel": nivel  }
+    programasIng.append(addProgram)
+    return {"programa agregado": programasIng}    
