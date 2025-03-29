@@ -1,1 +1,2 @@
 uvicorn main:app --port 4500 --reload
+masterPy\Scripts\activate

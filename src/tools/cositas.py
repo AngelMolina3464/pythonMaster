@@ -27,3 +27,16 @@ def avanceCurso(horas , minutos):
     tiempoTotal = duracionTotal["horas"]*60 + duracionTotal["minutos"]
     relacion = (tiempoTranscurrido / tiempoTotal)*100
     return f"% {round(relacion, 2)}"
+
+
+def avanceCursoFastAPI(moduloActual): 
+    numModulos = {
+    "cantidadModulos": 23,
+    }
+    
+    if (moduloActual > numModulos["cantidadModulos"]):
+      response = "Debe ser otro curso solo tiene 23 partidas"
+    else:
+        response = f"% {round((moduloActual / numModulos["cantidadModulos"])*100, 2)}"
+
+    return response

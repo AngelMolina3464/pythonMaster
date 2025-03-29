@@ -1,6 +1,7 @@
 import pandas as pd
 import requests
 import os
+import json
 
 archivo_excel = 'db.xlsx'
 folder = "imagenes"
@@ -46,3 +47,22 @@ def run ():
                 print(f"Error al guardar la imagen {url_imagen}: {e}")
         
     return ""
+
+
+def responseJsonApiPokeDex (): 
+    path = "podex.json"
+    try: 
+        with open(path, 'r',encoding='utf-8') as file:
+          listadeObjetos  = json.load(file)
+          return listadeObjetos  
+      
+    except FileNotFoundError:
+        print(f"Error: El archivo '{path}' no fue encontrado.")
+    except json.JSONDecodeError:
+    # Error si el archivo no tiene un formato JSON válido
+        print("Error: El archivo no tiene un formato JSON válido.")
+    except Exception as e:
+    # Captura cualquier otro error
+        print(f"Ocurrió un error inesperado: {e}")
+    
+    
