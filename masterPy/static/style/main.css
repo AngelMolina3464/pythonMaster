@@ -1,0 +1,55 @@
+.main_cotainer_wd {
+  margin: 20px auto;
+  width: 90vw;
+}
+.grid_contanier {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  column-gap: 20px;
+  row-gap: 20px;
+}
+.card_select {
+  padding: 5px 10px;
+  border: solid 2px rgba(10, 5, 77, 0.842);
+  display: flex;
+  flex-direction: column;
+  row-gap: 5px;
+  align-items: center;
+  border-radius: 15px;
+    text-align: center;
+}
+.card_select:hover {
+  background-color: rgba(55, 42, 80, 0.932);
+  color: aliceblue;
+  border: 0px;
+  transition: ease-in-out 300ms;
+}
+.card_select img {
+  width: 80px;
+}
+.card_select p {
+  text-align: center;
+}
+.card_select div {
+  display: flex;
+  width: 100%;
+  justify-content: right;
+  margin: 5px;
+}
+.card_select strong{
+    font-size: 1.2rem;
+}
+.navegation_button {
+  text-decoration: none;
+  text-transform: uppercase;
+  text-align: center;
+  color: black;
+  width: 80px;
+  background-color: rgb(159, 243, 159);
+  border-radius: 15px;
+}
+.navegation_button:hover {
+  background-color: rgb(76, 207, 76);
+  transition: ease-in-out 100ms;
+}

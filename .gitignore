@@ -1,3 +1,4 @@
 robot.ico
 imagenes/
-masterPy/
+.env
+masterPy/Lib/site-packages/

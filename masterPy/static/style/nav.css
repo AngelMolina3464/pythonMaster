@@ -1,0 +1,26 @@
+nav{
+    background-color: rgba(10, 5, 77, 0.842);
+    width: 100vw;
+}
+.nav_container{
+    display: flex;
+    align-items: center;
+}
+.nav_container_logo {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.nav_container_logo img{
+    margin: 5px 0px;
+    width: 50px;
+    border-radius: 15px;
+}
+.navegation_menu{
+    list-style: none;
+    display: flex;
+    column-gap: 20px;
+}
+.navegation_menu li a{
+    text-decoration: none;
+    color: whitesmoke;
+}
