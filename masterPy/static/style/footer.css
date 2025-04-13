@@ -1,0 +1,15 @@
+footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+}
+.footer_container {
+  background-color: rgba(45, 29, 73, 0.932);
+  width: 100vw;
+  text-align: right;
+}
+.footer_container p {
+  font-size: 0.7rem;
+  padding: 10px 15px;
+  color: whitesmoke;
+}

@@ -1,23 +1,39 @@
 .main_cotainer_wd {
   margin: 20px auto;
-  width: 90vw;
+  max-width: 80%;
 }
-.grid_contanier {
+.main_headerText {
+  text-align: center;
+  margin: 20px;
+}
+.main_headerText strong {
+  padding: 10px 10px;
+  font-size: 1.7rem;
+  border-radius: 15px 10px;
+}
+.main_headerText strong:hover {
+  color: whitesmoke;
+  background-color: rgba(55, 42, 80, 0.932);
+  transition: ease-in-out 400ms;
+}
+.grid_container {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(3, 1fr);
+  grid-template-columns: repeat(4, 1fr);
+  /*
+  grid-template-rows: repeat(6, 1fr);
+  */
   column-gap: 20px;
   row-gap: 20px;
 }
 .card_select {
-  padding: 5px 10px;
+  padding: 12px 10px;
   border: solid 2px rgba(10, 5, 77, 0.842);
   display: flex;
   flex-direction: column;
   row-gap: 5px;
   align-items: center;
   border-radius: 15px;
-    text-align: center;
+  text-align: center;
 }
 .card_select:hover {
   background-color: rgba(55, 42, 80, 0.932);
@@ -37,8 +53,13 @@
   justify-content: right;
   margin: 5px;
 }
-.card_select strong{
-    font-size: 1.2rem;
+.card_select strong {
+  font-size: 1.2rem;
+}
+.level_class {
+  color: rgb(6, 192, 77);
+  font-size: 1.4rem;
+  font-weight: bold;
 }
 .navegation_button {
   text-decoration: none;

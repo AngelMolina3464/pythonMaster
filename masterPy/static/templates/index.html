@@ -3,13 +3,18 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="static/style/nav.css" />
-    <link rel="stylesheet" href="static/style/root.css" />
-    <link rel="stylesheet" href="/static/style/main.css" />
+    <!-- Bloque de estilos-->
     <link rel="icon" href="static/favicon.ico" />
-    <title>Menu Principal</title>
+    <link rel="stylesheet" href="static/style/root.css" />
+    <link rel="stylesheet" href="static/style/nav.css" />
+    <link rel="stylesheet" href="static/style/main.css" />
+    <link rel="stylesheet" href="static/style/footer.css" />
+    <!-- Bloque de estilos-->
+
+    <title>Tablero de Proyectos</title>
   </head>
   <body class="body_container">
+    <!--  Bloque de Navegacion-->
     <nav class="nav_container">
       <div class="nav_container_logo">
         <img src="static/images/python_logo.png" alt="Python_Logo" />
@@ -21,17 +26,21 @@
         <li><a href="/contacto">Contacto</a></li>
       </ul>
     </nav>
+    <!--  Bloque de Navegacion-->
     <main>
       <div class="main_cotainer_wd">
-        <div class="grid_contanier">
+        <div class="main_headerText">
+          <strong>💻 Tablero de Proyectos 🖱️</strong>
+        </div>
+        <div class="grid_container">
           <div class="card_select">
             <strong>Pasarela Bancaria</strong>
             <i>Estado: <span>En Fase de Desarollo</span></i>
             <p>Simulacion del proceso Bancario en modelos de Compra</p>
-            <p>⭐⭐</p>
+            <p class="level_class">★★★☆☆</p>
             <img src="static/images/bank.png" alt="logo_card_select" />
             <div>
-              <a href="#" class="navegation_button">Ir</a>
+              <a href="/pasarela" class="navegation_button">Ir</a>
             </div>
           </div>
 
@@ -39,20 +48,30 @@
             <strong>ReBuild de Página Web </strong>
             <i>Estado: <span>En Fase de Maquetacion</span></i>
             <p>Nueva propuesta para Landing Page Empresarial</p>
-            <p>⭐</p>
+            <p class="level_class">★★☆☆☆</p>
             <img src="static/images/abe.png" alt="logo_card_select" />
             <div>
-              <a href="#" class="navegation_button">Ir</a>
+              <a href="/rebuild" class="navegation_button">Ir</a>
             </div>
           </div>
-
 
           <div class="card_select">
             <strong>Framework Front-End</strong>
             <i>Estado: <span>En Planeacion</span></i>
             <p>Implementacion de Front-End React al Proyecto</p>
-            <p>⭐⭐⭐</p>
+            <p class="level_class">★★★☆☆</p>
             <img src="static/images/react.png" alt="logo_card_select" />
+            <div>
+              <a href="#" class="navegation_button">Ir</a>
+            </div>
+          </div>
+
+          <div class="card_select">
+            <strong>CSS Pro+</strong>
+            <i>Estado: <span>En Planeacion</span></i>
+            <p>Implementacion de Front-End React al Proyecto</p>
+            <p class="level_class">★★★☆☆</p>
+            <img src="static/images/css.png" alt="logo_card_select" />
             <div>
               <a href="#" class="navegation_button">Ir</a>
             </div>
@@ -62,8 +81,41 @@
             <strong>Poke API Comparador</strong>
             <i>Estado: <span>En Planeacion</span></i>
             <p>Consumo de Api PokeGit para Comparacion Reactiva</p>
-            <p>⭐⭐</p>
+            <p class="level_class">★★☆☆☆</p>
             <img src="static/images/pokemon.png" alt="logo_card_select" />
+            <div>
+              <a href="#" class="navegation_button">Ir</a>
+            </div>
+          </div>
+
+          <div class="card_select">
+            <strong>POS Tienda</strong>
+            <i>Estado: <span>En Fase de Desarollo</span></i>
+            <p>Simulacion del proceso de Compra y venta</p>
+            <p class="level_class">★★★★☆</p>
+            <img src="static/images/shop.png" alt="logo_card_select" />
+            <div>
+              <a href="#" class="navegation_button">Ir</a>
+            </div>
+          </div>
+
+          <div class="card_select">
+            <strong>Loteria Selector </strong>
+            <i>Estado: <span>En Fase de Desarollo</span></i>
+            <p>Selector de Numeros Especiales para el Juego de Loteria</p>
+            <p class="level_class">★★★☆☆</p>
+            <img src="static/images/loteria.png" alt="logo_card_select" />
+            <div>
+              <a href="#" class="navegation_button">Ir</a>
+            </div>
+          </div>
+
+          <div class="card_select">
+            <strong>Buzon de Correo Electonico </strong>
+            <i>Estado: <span>En Fase de Desarollo</span></i>
+            <p>Generador de Correo Electronico y Buzon de Lectura</p>
+            <p class="level_class">★★☆☆☆</p>
+            <img src="static/images/mail.png" alt="logo_card_select" />
             <div>
               <a href="#" class="navegation_button">Ir</a>
             </div>
@@ -71,5 +123,12 @@
         </div>
       </div>
     </main>
+    <!-- Bloque de Footer -->
+    <footer>
+      <div class="footer_container">
+        <p>Powered By <span>ADEVS</span> ©2025</p>
+      </div>
+    </footer>
+    <!-- Bloque de Footer -->
   </body>
 </html>

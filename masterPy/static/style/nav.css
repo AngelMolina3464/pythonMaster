@@ -1,5 +1,5 @@
 nav{
-    background-color: rgba(10, 5, 77, 0.842);
+    background-color: rgba(45, 29, 73, 0.932);
     width: 100vw;
 }
 .nav_container{
@@ -12,7 +12,7 @@ nav{
 }
 .nav_container_logo img{
     margin: 5px 0px;
-    width: 50px;
+    width: 40px;
     border-radius: 15px;
 }
 .navegation_menu{

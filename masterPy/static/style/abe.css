@@ -1,0 +1,87 @@
+* {
+  font-family: "calibri";
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.nav__Container {
+  width: 100vw;
+  min-height: 980px;
+  background-color: rgba(9, 143, 143, 0.116);
+  background-image: url("https://www.abe-ref.com/wp-content/uploads/2019/07/Imagen6.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.nav__Container__Grid {
+  display: grid;
+  grid-template-columns: 20% 80%;
+  align-items: center;
+}
+
+.nav__Container__Grid img {
+  margin: 10px auto;
+  width: 150px;
+  height: 150px;
+}
+
+.nav__Container__Menu {
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+}
+
+.nav__Container__Select {
+  text-align: center;
+  min-width: 150px;
+  list-style: none;
+  position: relative;
+}
+
+.nav__Container__Select a {
+  font-family: "Barlow Semi Condensed", sans-serif;
+  display: block;
+  padding: 5px;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: aliceblue;
+}
+
+.nav__Container__Option {
+  position: absolute;
+  text-align: center;
+  min-width: 120px;
+  display: none;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+.nav__Container__Select,
+.nav__Container__Option {
+  font-size: 18px;
+}
+
+.nav__Container__Option.visible {
+  display: block;
+  opacity: 1;
+}
+
+.nav__Container__Option a {
+  font-family: "Barlow Semi Condensed", sans-serif;
+  display: block;
+  text-align: left;
+  text-decoration: none;
+}
+
+.slogan__Container {
+  margin: 0 auto;
+  width: 80%;
+}
+.slogan__Container__Text {
+  font-family: "Barlow Semi Condensed", sans-serif;
+  line-height: 1.2;
+  font-size: 2rem;
+  text-transform: uppercase;
+  font-weight: 600;
+}
